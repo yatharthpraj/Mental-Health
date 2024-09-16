@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mental Health</title>
+    <title>Healer Co.</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="logo2.jpeg" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon.png" type="image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
     </style>    
-
+    <script>
+        function openForm(){
+            document.getElementById("form-popup").style.display="block";
+        }
+        function closePopup(){
+            document.getElementById("form-popup").style.display="none";
+        }
+    </script>
 </head>
 <body>
     <nav id="nav">
-        <img src="Healer Co. (1).png" alt="logo">
+        <img src="Healer_Co.__1_-removebg-preview.png" alt="logo">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About us</a></li>
@@ -44,10 +50,43 @@
                 </div>
             </li>
             <div class="login">
-                 <a href="../Assets/index.html" target="_blank">Login</a>
+                <button onclick="openForm()">Login</button>
             </div>
         </ul>
-    </nav>
+        </nav>
+            <div class="form-popup" id="form-popup">
+               <button onclick="closePopup()">
+
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m336-280 144-144 144 144 56-56-144-144 144-144-56-56-144 144-144-144-56 56 144 144-144 144 56 56ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                   <!-- <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> -->
+               </button> 
+                <form action="#" class="form-container" method="post">
+                    <label for="name">Username:</label>
+                    <br>
+                    <input type="text" id="name" required>
+                    <br>
+
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email" name="Email" id="email" required>
+                    <br>
+
+                    <label for="age">Enter Age:</label>
+                    <br>
+                    <input type="month" min="1980" max="2024">
+                    <br>
+
+                    <label for="password">Password:</label>
+                    <br>
+                    <input type="password" name="password" id="password" required>
+                    <br>
+
+                    <input type="submit" value="Submit"  >
+                    <input type="reset" value="Reset" >
+                </form>
+                <a href="#">Forgot password?</a>
+            </div>
+        
     <section class="hero-section" id="hero-section">
        <div class="content">
         <h1>Ready to Elevate Your Mental Well-being?</h1>
@@ -84,7 +123,7 @@
         </div>
         <div class="up-arrow">
             <a href="#nav">
-                <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="60px" fill="#e8eaed"><path d="M440-320h80v-168l64 64 56-56-160-160-160 160 56 56 64-64v168Zm40 240q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="60px" fill="lightgrey"><path d="M440-320h80v-168l64 64 56-56-160-160-160 160 56 56 64-64v168Zm40 240q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
             </a>
         </div>
         
