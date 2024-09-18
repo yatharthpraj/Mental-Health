@@ -31,7 +31,7 @@ nav ul{
     list-style: none;
     justify-content:right;
     align-items: center;
-    gap: 35px;
+    gap: 3%;
     padding-right: 30px;
     list-style: none;
 }
@@ -40,7 +40,7 @@ nav ul li{
     &:hover{
         transition: 0.3s;
         border-bottom: 1px solid darkgrey;
-        /* transform: translateY(-4px); */
+        transform: translateY(-4px);
     }
 }
 nav ul li a{
@@ -69,7 +69,7 @@ nav ul li .service-content,nav ul li .therapist-content{
     width: 140px;
     margin-right: 20px;
     font-size: 90%;
-    height:200px;
+    /* height:20px; */
   
 }
 
@@ -83,9 +83,10 @@ nav ul :nth-child(3):hover .service-content,nav ul :nth-child(5):hover .therapis
             
         }
     }
-
+   
+ 
 }
-nav img{
+nav  img{
     height: 80%;
     width: 25%;
     margin-top: 10px;
@@ -132,15 +133,25 @@ nav img{
     display: none;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 1%;
+    margin-top: -3%;
     margin-left: 33%;
     background-color: white;
-    position:absolute;
+    position:fixed;
+    /* position: absolute; */
     z-index: 99;
-    height: 75%;
+    height: 88%;
     width: 35%;
     border-radius: 15px;
-    animation: zoomanimation 0.5s;
+    animation: zoomanimation 0.3s ease-in-out;
+   
+}
+@keyframes zoomanimation{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
 }
 .form-container{
     display: block;
@@ -168,14 +179,7 @@ nav img{
         color: rgb(4, 4, 183);
     }
 }
-@keyframes zoomanimation{
-    from{
-        transform: scale(0);
-    }
-    to{
-        transform: scale(1);
-    }
-}
+
 .form-popup input{
     color:black;
     font-size: 100%;
@@ -189,6 +193,7 @@ nav img{
 
 }
 .form-popup label{
+    display: inline-flex;
     color: black;
     margin-left: 3px;
     font-weight: 500;
@@ -216,6 +221,16 @@ nav img{
         /* box-shadow: 0px 0px 5px 3px black; */
         transform: scale(1.03);
     }
+}
+.form-popup div{
+    display: flex;
+    align-items: center;
+}
+.form-popup input[type=radio]{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 74%;
 }
 .hero-section{
     display: flex;
@@ -251,6 +266,14 @@ nav img{
     /* padding-right: 80px; */
     /* box-shadow: 0px 0px 30px 2px whitesmoke; */
 }
+.hero-section .image2{
+    height: 70%;
+    width: 550px;
+    margin: 55px;
+    display: flex;
+    border-radius: 350%;
+    mix-blend-mode:exclusion;
+} 
 .hero-section .content input[type="button"]{
     height: 40px;
     width: 150px;
@@ -276,6 +299,15 @@ nav img{
     }
     /* background-color: rgb(13, 89, 61); */
 }
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+}
+.about h1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
 .item-container{
     display: flex;
     width: 90%;
@@ -294,7 +326,7 @@ nav img{
     justify-content: center;
     align-items: center;
     /* border: 1px solid lightgray; */
-    box-shadow: 0px 0px 10px 2px grey;
+    box-shadow: 0px 0px 10px 2px rgba(78, 77, 77, 0.461);
     background-color: rgb(10, 12, 17);
     color: black;
     border-radius: 20px;
@@ -321,9 +353,9 @@ nav img{
     /* color: white; */
     background-color: rgb(13, 17, 23);
     border-style: none;
-    border: 2px solid rgba(255, 255, 255, 0.452);
-    font-size: 15px;
-    font-weight: 600%;
+    /* border: 2px solid rgba(255, 255, 255, 0.452); */
+    font-size: 18px;
+    font-weight: 500;
     border-radius: 10px;
     height: 40px;
     width: 120px;
@@ -331,18 +363,20 @@ nav img{
     justify-content: center;
     align-items: center;
     margin-left: 32%;
-     /* background-image: linear-gradient(to top,rgb(9, 60, 42),rgb(84, 166, 137)); */
+    background-image: linear-gradient(to top,rgb(9, 60, 42),rgb(84, 166, 137));
+    color: lightgray;
+    /* box-shadow: 0px 0px 10px 2px rgba(146, 146, 146, 0.567); */
 
     &:hover{
         transition: 0.2s;
-        transform: scale(1.09);
+        transform: scale(1.07);
         cursor: pointer;
-        box-shadow: 0px 0px 9px white;
+        box-shadow: 0px 0px 9px 4px black;
         border-style: none;
         /* background-color: rgb(9, 60, 42); */
         /* background-image: linear-gradient(red,yellow,black); */
         /* background-image: linear-gradient(to bottom,rgb(9, 60, 42),rgb(84, 166, 137)); */
-
+        animation: zoomanimation 0.6 ease;
         /* color: black; */
     }
     &:active{
@@ -353,7 +387,7 @@ nav img{
     }
 }
 .item-1 button{
-    margin-top: 70px;
+    margin-top: 60px;
 }
 .item-2 button{
     margin-top: 175px;
@@ -379,9 +413,10 @@ nav img{
     fill: white;
 }
 .footer{
+    background-image: url(layered-waves-haikei.png);
     height: 450px;
     width: auto;
-    background-color:rgb(9, 60, 42);
+    /* background-color:rgb(9, 60, 42);  */
     padding-left: 70px;
     color: white;
     font-size: 110%;
