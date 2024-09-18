@@ -25,29 +25,26 @@
                 <img src="Healer_Co.__1_-removebg-preview.png" alt="logo">
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
+            <li><a href="#about">About us</a></li>
             <li>
                 <div class="service">
-                    <a href="#">Services<svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M480-360 280-560h400L480-360Z"/></svg></a>
+                    <a href="#service">Services<svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M480-360 280-560h400L480-360Z"/></svg></a>
                     <div class="service-content">
                         <a href="#">Option 1</a>
                         <a href="#">Option 2</a>
                         <a href="#">Option 3</a>
-                        <a href="#">Option 4</a>
-                        <a href="#">Option 5</a>
+                        
                     </div>
                 </div>
             </li>
-            <li><a href="#">Meditation</a></li>
+            <li><a href="#meditation">Meditation</a></li>
             <li>
                 <div class="therapist">
                     <a href="#">Therapist<svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M480-360 280-560h400L480-360Z"/></svg></a>
                     <div class="therapist-content">
                         <a href="#">Option 1</a>
                         <a href="#">Option 2</a>
-                        <a href="#">Option 3</a>
-                        <a href="#">Option 4</a>
-                        <a href="#">Option 5</a>
+                       
                     </div>
                 </div>
             </li>
@@ -76,15 +73,7 @@
                     <label for="age">Enter Age:</label>
                     <br>
                     <input type="month" min="1980" max="2024">
-                    <br>
-                    <div>
-                        <label for="gender">Male</label>
-                        <input type="radio" id="gender"  value="Male" name="gender">
-                        <label for="gender">Female</label>
-                        <input type="radio" id="gender"  value="Female" name="gender">
-                        <br>
-                    </div>
-                    <label for="password">Password:</label>
+                    <label for="password">Password:</label> 
                     <br>
                     <input type="password" name="password" id="password" required>
                     <br>
@@ -107,15 +96,19 @@
         <img src="imagw2.png" alt="image">
        </div>
     </section>
-    <section class="about">
-        <img src="./images.png" alt="">
-        <h1>Test1</h1>
-        <h1>Test3</h1>
-        <img src="./images-removebg-preview.png" alt="">
-        <!-- <h1>Test2</h1>
-        <h1>Test4</h1> -->
+    <section class="about" id="about">
+        <div class="about-images">
+            <img src="./images.png" alt="">
+            <img src="./images-removebg-preview.png" alt="">
+        </div>
+        <div class="about-des">
+            <h1>About Us</h1>
+        </div>
+        <div class="why-choose-us">
+            <h1>Why Choose Us</h1>
+        </div>
     </section>
-    <section class="item-container">
+    <section class="item-container" id="service">
         <div class="item item-1">
             <h2>
                 Card 1
@@ -144,9 +137,9 @@
         </div>
         
     </section>
-    <section class="hero-section">
+    <section class="hero-section" id="meditation">
         <div class="image">
-            <img class="image2" src="https://i.pinimg.com/originals/bb/f2/40/bbf2404f7c215e4ada6427623bd43237.gif" alt="image">
+            <img class="image2" src="heroSectionImage2.gif" alt="image">
         </div>
         <div class="content">
             <h2>
@@ -157,48 +150,70 @@
             </p>
         </div>
     </section>
-   
+    <section class="faq">
+        <h3>Frequently Asked Questions</h3>
+
+        <div class="questions">
+            <details>
+                <summary>Question 1.<svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="white"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></summary>
+                <div class="summary-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odio illum nostrum temporibus praesentium quam aperiam 
+                </div>
+            </details>
+        </div>
+        <div class="questions">
+            <details>
+                <summary>Question 2.<svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="white"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg>
+                </summary>
+                <div class="summary-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odio illum nostrum temporibus praesentium quam aperiam 
+                </div>
+            </details>
+        </div>
+        <div class="questions">
+            <details>
+                <summary>Question 3.<svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="white"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></summary>
+                <div class="summary-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odio illum nostrum temporibus praesentium quam aperiam 
+                </div>
+            </details>
+        </div>
+        
+       
+    </section>
     <footer class="footer">
-        <img src="Healer_Co.__1_-removebg-preview.png" alt="">
-        <div class="input-container">
-            <i class="fa fa-envelope icon"></i>
-            <input class="input-field" type="text" placeholder="Email" name="email" autocomplete="off">
-          </div>
         <div class="container">
             <div class="footer-items">
-                <h3>Dr. Ugrasen Suman</h3>
-                <h4>Professor & Head</h4>
-                <h4>
-                    School of Computer Science & IT</h4>
-                    <p>Takshashila Campus, Khandwa Road
-                        Indore (M.P.) - 452001, India</p>
-                        <p>Email :
-                            ugrasen123@yahoo.com head.scs@dauniv.ac.in</p>
+                <a href="#"><b>Home</b></a>
+                <a href="#"><b>About Us</b></a>
+                <a href="#"><b>Contact</b></a>
+                <a href="#"><b>Meditation</b></a>
+                
             </div>
             <div class="footer-items">
-                <a href="#">Examination</a>
-                <a href="#">Anti Raging</a>
-                <a href="#">Awards & Achievements</a>
-                <a href="#">Events</a>
-                <a href="#">Downloads</a>
-                <a href="#">Photo Gallery</a>
+                <a href="#"><b>Services</b></a>
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
             </div>
             <div class="footer-items">
-                <a href="#">Student Life</a>
-                <a href="#">Ex-Student Verification</a>
-                <a href="#">Campus Tour</a>
-                <a href="#">Reach Us</a>
-                <a href="#">Feedback</a>
+                <a href="#"><b>Therapist</b></a>
+                <a href="#">Option 1 </a>
+                <a href="#">Option 2</a>
             </div>
-            <div class="footer-items">
-                <a href="#">Library</a>
-                <a href="#">Collaboration and Projects </a>
-                <a href="#">Mandatory Disclosure</a>
-                <a href="#">Sitemap</a>
-                <a href="#">Meet the developers</a>
+            <div class="input-container">
+                <i class="fa fa-envelope icon">Email:</i><br>
+                <input class="input-field" type="text" placeholder="Email" name="email" autocomplete="off">
+                <br>
+                <img src="youtube.png" alt="youtube" class="social-icons">
+                <img src="whatsapp.png" alt="whatsapp"class="social-icons">
+                <img src="facebook.png" alt="facebook"class="social-icons">
+                <img src="twitter.png" alt="twitter"class="social-icons">
             </div>
             
         </div>
+        <img src="Healer_Co.__1_-removebg-preview.png" alt="">
+        <p>Copyright. &copy; 2024. All rights reserved</p>
     </footer>
 </body>
 </html>
