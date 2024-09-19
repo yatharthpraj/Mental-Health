@@ -139,15 +139,18 @@ nav  img{
     display: none;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: -3%;
+    margin-top: -5%;
     margin-left: 33%;
-    background-color: white;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
     position:fixed;
     /* position: absolute; */
+    /* border: 2px solid white; */
     z-index: 99;
     height: 88%;
     width: 35%;
     border-radius: 15px;
+    box-shadow: 0px 0px 25px 20px rgba(25, 25, 25, 0.632);
     animation: zoomanimation 0.3s ease-in-out;
    
 }
@@ -180,14 +183,14 @@ nav  img{
     justify-content: space-around;
     font-weight: 500;
     margin: 10px;
-    color:blue;
+    color:white;
     &:hover{
-        color: rgb(4, 4, 183);
+        opacity: 0.5;
     }
 }
 
 .form-popup input{
-    color:black;
+    /* color:white; */
     font-size: 100%;
     font-weight: 500;
     line-height: 1.4;
@@ -196,11 +199,17 @@ nav  img{
     height: 35px;
     /* text-align: center; */
     margin-bottom: 30px;
+    &::placeholder{
+        color:black;
 
+    }
+    &:focus{
+        color:black;
+    }
 }
 .form-popup label{
     display: inline-flex;
-    color: black;
+    /* color: white; */
     margin-left: 3px;
     font-weight: 500;
     /* text-align: start; */
@@ -213,8 +222,8 @@ nav  img{
 }
 .form-popup input[type=submit],.form-popup input[type=reset]{
     margin: 4px;
-    font-weight: 300;
-    font-size: 100%;
+    font-weight: 500;
+    font-size: 120%;
     display: inline-flex;
     width: 45%;
     /* margin-left: 7px; */
@@ -222,11 +231,13 @@ nav  img{
     margin-left: 8px;
     margin-bottom: -20px;
     border: none;
-    background-color: rgb(9, 60, 42);
-    color: white;
+    /* background-color: rgb(9, 60, 42); */
+    color: black;
     border-radius: 10px;
+    opacity: 0.8;
     cursor:pointer;
     &:hover{
+        opacity: 1;
         transform: scale(1.03);
     }
  }
@@ -468,10 +479,16 @@ nav  img{
     fill: white;
 }
 .faq{
-    /* display: flex; */
-    margin: 70px;
-    /* text-align: center; */
+    /* margin: 0px 70px; */
+
     font-size: 180%;
+    margin-bottom: 150px;
+    margin-top: 70px;
+    /* border: 2px solid wheat; */
+    padding: 70px;
+    /* display: flexbox; */
+    justify-content: center;
+    align-items: center;
 }
 .faq h3{
     font-size: 130%;
@@ -516,6 +533,7 @@ nav  img{
     /* background-color:rgb(9, 60, 42);  */
     padding: 0px 0px 30px 70px;
     color: white;
+    
     font-size: 110%;
 }
 .footer img{
@@ -523,16 +541,9 @@ nav  img{
     width: 350px;
     margin: 40px;
     margin-left: -10px;
+    margin-bottom: 20px;
 }
-.footer h2{
-    font-size: 250%;
-    padding-top: 50px;
-    font-weight: 500;
-    margin-bottom: 70px;
-}
-.footer h4{
-    margin-top: 3px;
-}
+
 .footer .container{
     display:flex;
 }
