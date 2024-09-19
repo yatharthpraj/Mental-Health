@@ -60,16 +60,30 @@ nav ul li .service{
     position: relative;
     display: inline-block;
 }
-nav ul li .service-content,nav ul li .therapist-content{
+
+nav ul li .service-content{
     display: none;
     position: absolute;
     /* background-color: rgba(13, 17, 23, 0); */
     background-color: transparent;
     color: white;
     z-index: 1;
-    width: 140px;
+    width: 130px;
     margin-right: 20px;
-    font-size: 90%;
+    font-size: 75%;
+    /* height:20px; */
+    
+}
+
+nav ul li .therapist-content{
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    z-index: 1;
+    width: 180px;
+    margin-right: 20px;
+    font-size: 75%;
     /* height:20px; */
     
 }
@@ -139,17 +153,15 @@ nav  img{
     display: none;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: -5%;
+    margin-top: -3%;
     margin-left: 33%;
     background-color: white;
     position:fixed;
     /* position: absolute; */
-    /* border: 2px solid white; */
     z-index: 99;
     height: 88%;
     width: 35%;
     border-radius: 15px;
-    box-shadow: 0px 0px 25px 20px rgba(25, 25, 25, 0.632);
     animation: zoomanimation 0.3s ease-in-out;
    
 }
@@ -184,12 +196,12 @@ nav  img{
     margin: 10px;
     color:blue;
     &:hover{
-        opacity: 0.5;
+        color: rgb(4, 4, 183);
     }
 }
 
 .form-popup input{
-    /* color:white; */
+    color:black;
     font-size: 100%;
     font-weight: 500;
     line-height: 1.4;
@@ -198,13 +210,7 @@ nav  img{
     height: 35px;
     /* text-align: center; */
     margin-bottom: 30px;
-    &::placeholder{
-        color:black;
 
-    }
-    &:focus{
-        color:black;
-    }
 }
 .form-popup label{
     display: inline-flex;
@@ -221,8 +227,8 @@ nav  img{
 }
 .form-popup input[type=submit],.form-popup input[type=reset]{
     margin: 4px;
-    font-weight: 500;
-    font-size: 120%;
+    font-weight: 300;
+    font-size: 100%;
     display: inline-flex;
     width: 45%;
     /* margin-left: 7px; */
@@ -233,10 +239,8 @@ nav  img{
     background-color: rgb(9, 60, 42);
     color: white;
     border-radius: 10px;
-    opacity: 0.8;
     cursor:pointer;
     &:hover{
-        opacity: 1;
         transform: scale(1.03);
     }
  }
@@ -244,6 +248,7 @@ nav  img{
 .hero-section{
     display: flex;
     margin: 40px ;
+    height: 30rem;
     text-align: start;
     justify-content: center;
     /* border: 2px solid white; */
@@ -275,9 +280,9 @@ nav  img{
     /* padding-right: 80px; */
     /* box-shadow: 0px 0px 30px 2px whitesmoke; */
 }
-.hero-section .image2{
+.hero-section .image .image2{
     height: 70%;
-    width: 550px;
+    width: 350px;
     margin: 55px;
     display: flex;
     border-radius: 350%;
@@ -292,40 +297,39 @@ nav  img{
     border-radius: 15px;
     margin-top: 50px;
     border-style: none;
-    border: 1px solid lightgrey;
-    /* box-shadow: 0px 0px 4px 1px rgb(255, 255, 255); */
     text-align: center;
-    background-color: rgb(9, 60, 42);
+    background-color: rgb(13, 17, 23);
+    font-weight: 500;
+    background-image: linear-gradient(to top,rgb(9, 60, 42),rgb(84, 166, 137));
+    color: lightgray;
     
     &:hover{
         transform: scale(1.03);
-        /* height: 44px;
-        width: 158px; */
         transition: 0.2s;
-        /* background-color: rgba(11, 87, 60, 0.913); */
         box-shadow: 0px 0px 80px 10px rgb(0, 0, 0);
         cursor: pointer;
     }
-    /* background-color: rgb(13, 89, 61); */
 }
 .about{
     display: flex;
-    height: 27rem;
+    height: 30rem;
     justify-content: center;
-    margin: 70px;   
+    margin: 90px;
+    margin-top: 130px;
+    margin-bottom: 110px;   
     /* border: 2px solid white; */
 
 }
 .about .about-images img{
     /* display: flex; */
-    width: 20rem;
+    width: 23rem;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 
     height: 50%;
 }
 .about .about-des {
-    width: 28%;
+    width: 26%;
     display: flex;
     padding: 20px;
     flex-direction: row;
@@ -335,8 +339,8 @@ nav  img{
     /* border: 2px solid white; */
     transform: scale(1.15);
     border-radius: 20px;
-    background-color: rgb(147, 179, 168);
-    box-shadow: 0px 0px 9px 5px black;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px 2px rgb(147, 179, 168);
     /* &:hover{
         transform: scale(1.01);
     border-radius: 20px;
@@ -353,7 +357,7 @@ nav  img{
 .about h1{
     font-size: 200%;
     font-weight: 400;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .about .why-choose-us{
     padding: 20px;
@@ -363,11 +367,11 @@ nav  img{
     justify-content: center;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-color: rgb(9, 60, 42);
+    background-color: rgb(110,168,146);
     
 }
 .about .why-choose-us h1{
-    color: white;
+    color: rgb(0, 0, 0);
 
 }
 .about img{
@@ -380,10 +384,11 @@ nav  img{
 .item-container{
     display: flex;
     width: 90%;
-    /* border: 2px solid white; */
-    justify-content:space-around;
+    height: 40rem;
+    border: 2px solid white;
+    justify-content: center;
     align-items: center;
-    margin: 70px;   
+    margin: 0px;   
     text-align: center;
     
 }
@@ -391,7 +396,7 @@ nav  img{
     height: 500px;
     width: 30%;
     margin: 40px;
-    /* display:inline-flex; */
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     /* border: 1px solid lightgray; */
@@ -477,21 +482,28 @@ nav  img{
     /* color: wheat; */
     fill: white;
 }
+
+#meditation p#Extra{
+    margin-top: 30px;
+    font-size: smaller;
+    font-style: italic;
+}
+
+#meditation .image2{
+
+}
+
 .faq{
+    /* display: flex; */
+    margin: 70px;
+    /* text-align: center; */
     font-size: 180%;
-    margin-bottom: 150px;
-    margin-top: 70px;
-    /* border: 2px solid wheat; */
-    padding: 70px;
-    /* display: flexbox; */
-    justify-content: center;
-    align-items: center;
 }
 .faq h3{
     font-size: 130%;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 }
 .faq .questions summary{
     display: block;
@@ -530,7 +542,6 @@ nav  img{
     /* background-color:rgb(9, 60, 42);  */
     padding: 0px 0px 30px 70px;
     color: white;
-    
     font-size: 110%;
 }
 .footer img{
@@ -538,9 +549,16 @@ nav  img{
     width: 350px;
     margin: 40px;
     margin-left: -10px;
-    margin-bottom: 20px;
 }
-
+.footer h2{
+    font-size: 250%;
+    padding-top: 50px;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.footer h4{
+    margin-top: 3px;
+}
 .footer .container{
     display:flex;
 }
