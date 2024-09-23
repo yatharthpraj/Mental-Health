@@ -300,22 +300,23 @@ nav  img{
     height: 40px;
     width: 150px;
     font-size: 130%;
-    font-weight: 400;
-    color: white;
+    font-weight: 600;
+    color: black;
     border-radius: 15px;
     margin-top: 50px;
     border-style: none;
     text-align: center;
     /* background-color: rgb(9, 60, 42); */
-    background-image: linear-gradient(to top,rgb(9, 60, 42),rgb(84, 166, 137));
-    
+    background-image: white;
+    box-shadow: 3px 3px 2px 2px rgb(121, 176, 156);
+
     &:hover{
         transform: scale(1.03);
         /* height: 44px;
         width: 158px; */
         transition: 0.2s;
         /* background-color: rgba(11, 87, 60, 0.913); */
-        box-shadow: 0px 0px 80px 10px rgb(0, 0, 0);
+        /* box-shadow: 0px 0px 80px 10px rgb(0, 0, 0); */
         cursor: pointer;
     }
     /* background-color: rgb(13, 89, 61); */
@@ -450,11 +451,11 @@ nav  img{
 }
 .item-container button{
     /* color: white; */
-    background-color: rgb(13, 17, 23);
+    background-color: white;
     border-style: none;
     /* border: 2px solid rgba(255, 255, 255, 0.452); */
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     border-radius: 10px;
     height: 40px;
     width: 120px;
@@ -462,15 +463,15 @@ nav  img{
     justify-content: center;
     align-items: center;
     /* margin-left: 12%; */
-    background-image: linear-gradient(to top,rgb(9, 60, 42),rgb(84, 166, 137));
-    color: lightgray;
+    background-image: white;
+    color: black;
     /* box-shadow: 0px 0px 10px 2px rgba(146, 146, 146, 0.567); */
 
     &:hover{
         transition: 0.2s;
         transform: scale(1.07);
         cursor: pointer;
-        box-shadow: 0px 0px 9px 4px black;
+        box-shadow: 0px 0px 9px 2px black;
         border-style: none;
         animation: zoomanimation 0.6 ease;
     }
@@ -556,7 +557,8 @@ nav  img{
     background-image: linear-gradient(to top left ,rgb(9, 60, 42) ,rgb(42, 68, 89));
     width: 80%;
     display: flex;
-    font-size: 80%;
+    font-size: 70%;
+    line-height: 1.4;
     margin-left: 130px;
     margin-bottom: 30px;
 }
