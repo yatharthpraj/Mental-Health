@@ -326,9 +326,11 @@ nav  img{
 }
 .about{
     display: flex;
-    height: 27rem;
+    height: 32rem;
     justify-content: center;
-    margin: 70px;   
+    margin: 70px;
+    padding-top: 80px; 
+
     /* border: 2px solid white; */
 
 }
